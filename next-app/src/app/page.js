@@ -63,17 +63,17 @@ export default function Home() {
     <main
       className={
         courier.className +
-        " flex text-white min-h-screen flex-col items-center justify-center p-24 bg-gray-900"
+        " flex text-white min-h-screen flex-col items-center justify-center px-20 py-10  bg-red-900"
       }
     >
       {/* don't leave out the space before flex. If you don't, the className will be something like: couriersclassnameflex text-white..., 
       which will thus not apply the rules we want */}
 
-      <div className="flex w-full">
-        <div className="flex flex-col gap-2  w-[60%]">
+      <div className="flex md:flex-row items-center justify-center flex-col w-full min-h-full px-10 gap-10 pb-20">
+        <div className="flex flex-col gap-2  md:w-[60%]">
           <h1 className={"text-4xl"}> Welcome to LW3Punks</h1>
           <h2 className={"text-lg"}>
-            It is an NFT collection for LearnWeb3 students.
+            It is an NFT collection for LearnWeb3 students who are into Deadpool.
           </h2>
 
           <div>
@@ -86,7 +86,7 @@ export default function Home() {
             {account ? (
               // if the user has connected their wallet
               <button
-                className="bg-blue-500 px-4 py-2 font-sans rounded-md disabled:cursor-not-allowed disabled:bg-blue-900"
+                className="bg-gray-900 px-4 py-2 font-sans rounded-md disabled:cursor-not-allowed disabled:bg-blue-900"
                 disabled={isLoading}
                 onClick={mintToken}
               >
@@ -99,13 +99,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex border-2 w-[40%]">
-          <img src={"/learnweb3punks.png"} />
+        <div className="flex">
+          <img src={"/deadpool.jpeg"} className="max-h-[300px] max-w-[300px] rounded-lg"/>
         </div>
       </div>
 
-      <footer className="absolute bottom-0 w-full text-center mb-4 tracking-wider">
-        Made with &#10084; by LW3Punks
+      <footer className="md:absolute md:bottom-10 w-full text-center tracking-wider">
+        Made with &#10084; by LW3Punks & arujjval
       </footer>
     </main>
   );
