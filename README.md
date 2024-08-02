@@ -25,7 +25,6 @@ git clone https://github.com/your-username/LW3Punks.git
 
 ```
 
-Use code [with caution.](/faq#coding)
 
 **Install dependencies:**
 
@@ -41,7 +40,6 @@ npm install
 
 ```
 
-Use code [with caution.](/faq#coding)
 
 **Configure environment variables:** Create a `.env.local` file in the `next-app` directory and add the following variable:
 
@@ -69,11 +67,7 @@ npm run dev
 
 ```
 
-Use code [with caution.](/faq#coding)
 
-### License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ### Contributing
 
